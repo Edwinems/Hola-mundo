@@ -1,4 +1,4 @@
-def imprimir_piramide(profundidad):
+def imprimir_piramide(profundidad): #Número a introducir para hacer el triángulo con números
 
     for i in range(1, profundidad + 1):
 
