@@ -1,0 +1,19 @@
+def imprimir_piramide(profundidad):
+
+    for i in range(1, profundidad + 1):
+
+        print(" " * (profundidad - i), end="")
+        
+        for j in range(i, 2 * i):
+            print(j, end="")
+        
+        for j in range(2 * i - 2, i - 1, -1):
+            print(j, end="")
+
+        print()
+
+try:
+    profundidad = int(input("Introduce la profundidad de la pirámide: "))
+    imprimir_piramide(profundidad)
+except ValueError:
+    print("Por favor, introduce un número válido.")
